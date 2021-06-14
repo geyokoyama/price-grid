@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 1.8em;
+  height: 100%;
+}
+
+.landing {
+  display: grid;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  max-width: 768px;
+}
+
+.intro .intro-text {
+  padding: 1.2em 2em;
+  color: grey;
+  background-color: white;
+}
+
+.intro .intro-text h3 {
+  font-size: 1.5em;
+  color: lightseagreen;
+}
+
+.intro .intro-text p:first-of-type {
+  color: yellowgreen;
+}
+
+.intro .intro-subscription {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro .intro-subscription h4 {
+  font-size: 1.2em;
+}
+
+.intro .intro-subscription .signup {
+  padding: 1.2em 2em;
+  background: lightseagreen;
+}
+
+.intro .intro-subscription .signup span.bg-text {
+  font-size: 3em;
+  font-style: bold;
+}
+
+.intro .intro-subscription .signup span.wk-text {
+  color: lightgrey;
+  padding: 0 .5em;
+}
+
+.intro .intro-subscription .signup .btn-signup {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 0.8em 0;
+  background-color: yellowgreen;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 1.5em;
+}
+
+.intro .intro-subscription .signup .btn-signup:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1em grey;
+  transition: .2s;
+}
+
+.intro .intro-subscription .why {
+  padding: 1.2em 2em;
+  background-color: mediumseagreen;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    margin: 1em 0;
+    box-shadow: 0 0 1em grey;
+  }
+
+  .intro .intro-subscription {
+    flex-direction: row;
+  }
+
+  .intro .intro-subscription .signup,
+  .intro .intro-subscription .why {
+    flex: 1;
+  }
+}
